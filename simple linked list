@@ -1,17 +1,35 @@
+
 import java.util.LinkedList;
 public class array {
     public static void main (String[] args){
-       LinkedList<String>newList = new LinkedList<>();
+       LinkedList<String> newList = new LinkedList<>();
        newList.add("A");
        newList.add("B");
        newList.addLast("H");
        newList.addFirst("L");
        newList.add(2,"K");
+       newList.addLast("A");
        System.out.println(newList);
-       newList.remove("A");
-       newList.remove(3);
-       newList.removeFirst();
-       newList.removeLast();
+       System.out.println(newList.peek());
        System.out.println(newList);
+       //System.out.println(newList.push("j"));
+       //System.out.println(newList.poll());
+       System.out.println(newList);
+       System.out.println(newList.contains("A"));
+       System.out.println(newList.element());
+       System.out.println(newList.indexOf("A"));
+       System.out.println(newList.lastIndexOf("A"));
+       System.out.println(newList.toArray());
+       newList.offer("o");
+       newList.offerFirst("s");
+       newList.offerLast("o");
+       //newList.remove("A");
+       //newList.remove(3);
+      // newList.removeFirst();
+       //newList.removeLast();
+       System.out.println(newList);
+       for(int i=0; i<newList.size(); i++){
+          System.out.print(newList.get(i) +" ");
+       }
 }
     }
