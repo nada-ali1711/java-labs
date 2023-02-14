@@ -1,0 +1,17 @@
+import java.util.LinkedList;
+public class array {
+    public static void main (String[] args){
+       LinkedList<String>newList = new LinkedList<>();
+       newList.add("A");
+       newList.add("B");
+       newList.addLast("H");
+       newList.addFirst("L");
+       newList.add(2,"K");
+       System.out.println(newList);
+       newList.remove("A");
+       newList.remove(3);
+       newList.removeFirst();
+       newList.removeLast();
+       System.out.println(newList);
+}
+    }
